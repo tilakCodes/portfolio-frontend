@@ -346,7 +346,23 @@
           <p>
             A glimpse into my professional journey, showcasing my technical skills, education, and impactful projects.
           </p>
+          <div class="text-left mt-4">
+            <a href="assets/files/Tilak_Bahadur_Karki_CV.pdf" class="btn btn-primary btn-lg" id="download-cv-btn" download>
+              Download CV
+            </a>
+          </div>
         </div>
+
+
+        <script>
+          document.getElementById('download-cv-btn').addEventListener('click', function() {
+            this.classList.add('animate__animated', 'animate__bounce');
+            setTimeout(() => {
+              this.classList.remove('animate__animated', 'animate__bounce');
+            }, 1000); // Duration of the animation
+          });
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <!-- End Section Title -->
 
         <div class="container">
